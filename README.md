@@ -70,70 +70,39 @@ a cluster.
 ## Output:
 ![K Means Clustering for Customer Segmentation](sam.png)
 ~~~
- CustomerID  Gender  Age  Annual Income (k$)  Spending Score (1-100)
- 0           
-1           
-2           
-3           
-4           
-1    
-2    
-Male   
-Male   
-19                  
-21                  
-3  Female   20                  
-4  Female   23                  
-5  Female   31                  
+CustomerID  Gender  Age  Annual Income (k$)  Spending Score (1-100)
+0           1    Male   19                  15                      39
+1           2    Male   21                  15                      81
+2           3  Female   20                  16                       6
+3           4  Female   23                  16                      77
+4           5  Female   31                  17                      40
 <class 'pandas.core.frame.DataFrame'>
- RangeIndex: 200 entries, 0 to 199
- Data columns (total 5 columns):
- #   
-Column                  ---  ------                  
-0   
-1   
-2   
-3   
-4   
-CustomerID              
-Gender                  
-Age                     
-Annual Income (k$)      
-Spending Score (1-100)  200 non-null    
+RangeIndex: 200 entries, 0 to 199
+Data columns (total 5 columns):
+ #   Column                  Non-Null Count  Dtype 
+---  ------                  --------------  ----- 
+ 0   CustomerID              200 non-null    int64 
+ 1   Gender                  200 non-null    object
+ 2   Age                     200 non-null    int64 
+ 3   Annual Income (k$)      200 non-null    int64 
+ 4   Spending Score (1-100)  200 non-null    int64 
 dtypes: int64(4), object(1)
- memory usage: 7.9+ KB
- None
- CustomerID                
-Gender                    
-Age                       
-15                      
-15                      
-16                       
-16                      
-17                      
-Non-Null Count  Dtype --------------  ----- 
-200 non-null    
-200 non-null    
-200 non-null    
-39
- 81
- 6
- 77
- 40
- int64 
-object
- int64 
-200 non-null    
-0
- 0
- 0
- Annual Income (k$)        
-Spending Score (1-100)    
+memory usage: 7.9+ KB
+None
+CustomerID                0
+Gender                    0
+Age                       0
+Annual Income (k$)        0
+Spending Score (1-100)    0
 dtype: int64
- 0
- 0
- int64 
-int64
+
+
+[0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0 4 0
+ 4 0 4 0 4 0 2 0 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+ 2 2 2 2 2 2 2 2 2 2 2 2 1 3 1 2 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 2 1 3 1 3 1
+ 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3
+ 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1]
 ~~~
 
 ![elbow method](https://github.com/user-attachments/assets/aa688825-0bdf-4942-b141-c8d7e3461cab)
