@@ -69,6 +69,7 @@ a cluster.
 
 ## Output:
 ![K Means Clustering for Customer Segmentation](sam.png)
+~~~
  CustomerID  Gender  Age  Annual Income (k$)  Spending Score (1-100)
  0           
 1           
@@ -133,7 +134,7 @@ dtype: int64
  0
  int64 
 int64
-
+~~~
 
 ![elbow method](https://github.com/user-attachments/assets/aa688825-0bdf-4942-b141-c8d7e3461cab)
 
